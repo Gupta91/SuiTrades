@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
     return (
         <>
             <div class="flex flex-wrap">
@@ -11,7 +11,7 @@ export default function Navbar() {
                             <ul class="hidden md:flex px-4 font-serif space-x-12">
                                 <li>
                                     <a
-                                        className="font-serif font-mono hover:text-blue-400 text-xl tracking-widest"
+                                        className="font-serif font-mono hover:text-blue-500 text-xl tracking-widest"
                                         href="/"
                                     >
                                         HOME
@@ -19,7 +19,7 @@ export default function Navbar() {
                                 </li>
                                 <li>
                                     <a
-                                        class="font-serif hover:text-blue-400 text-xl tracking-widest"
+                                        class="font-serif hover:text-blue-500 text-xl tracking-widest"
                                         href="/about"
                                     >
                                         ABOUT

@@ -25,6 +25,14 @@ export default function Navbar(props) {
                                         ABOUT
                                     </a>
                                 </li>
+                                <li>
+                                    <a
+                                        class="font-serif hover:text-blue-500 text-xl tracking-widest"
+                                        href="/login"
+                                    >
+                                        LOGIN
+                                    </a>
+                                </li>
                             </ul>
                             <div className="flex-grow"></div>
                         </div>

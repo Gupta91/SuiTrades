@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <>
             <div
-                className="bg-cover min-h-screen"
+                className="bg-cover bg-center min-h-screen"
                 style={{ backgroundImage: `url(/background.jpg)` }}
             >
                 <Navbar />
@@ -45,7 +45,7 @@ export default function Home() {
                     </motion.div>
                     <motion.div
                         className="text-white text-xl mx-8 font-serif"
-                        initial={{ opacity: 0, x: 200 }}
+                        initial={{ opacity: 0, x: 10 }}
                         whileInView={{ opacity: 1, x: -50 }}
                         transition={{ duration: 1 }}
                     >

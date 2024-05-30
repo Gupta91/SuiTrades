@@ -1,5 +1,5 @@
 // TradingViewWidget.jsx
-import React, { useEffect, useRef, memo } from "react";
+import { useEffect, useRef} from "react";
 
 export default function TradingViewWidget() {
     const container = useRef();

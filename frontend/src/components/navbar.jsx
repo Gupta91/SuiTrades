@@ -1,17 +1,18 @@
-import React from "react";
+// import React from "react";
+import Login from "./login";
 import "../App.css";
 
-export default function Navbar(props) {
+export default function Navbar() {
     return (
         <>
-            <div class="flex flex-wrap">
-                <section class="relative mx-auto">
-                    <nav class="flex justify-between bg-transparent text-white font-bold w-screen">
-                        <div class="px-5 xl:px-12 py-6 flex w-full items-center">
-                            <ul class="hidden md:flex px-4 font-serif space-x-12">
+            <div className="flex flex-wrap">
+                <section className="relative mx-auto">
+                    <nav className="flex justify-between bg-transparent text-white font-bold w-screen">
+                        <div className="px-5 xl:px-12 py-6 flex w-full items-center">
+                            <ul className="hidden md:flex px-4 font-serif space-x-12">
                                 <li>
                                     <a
-                                        className="font-serif font-mono hover:text-blue-500 text-xl tracking-widest"
+                                        className="font-serif hover:text-blue-500 text-xl tracking-widest"
                                         href="/"
                                     >
                                         HOME
@@ -19,22 +20,15 @@ export default function Navbar(props) {
                                 </li>
                                 <li>
                                     <a
-                                        class="font-serif hover:text-blue-500 text-xl tracking-widest"
+                                        className="font-serif hover:text-blue-500 text-xl tracking-widest"
                                         href="/about"
                                     >
                                         ABOUT
                                     </a>
                                 </li>
-                                <li>
-                                    <a
-                                        class="font-serif hover:text-blue-500 text-xl tracking-widest"
-                                        href="/login"
-                                    >
-                                        LOGIN
-                                    </a>
-                                </li>
                             </ul>
                             <div className="flex-grow"></div>
+                            <Login className="justify-right"/>
                         </div>
                     </nav>
                 </section>

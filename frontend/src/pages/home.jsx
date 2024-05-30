@@ -25,7 +25,7 @@ export default function Home() {
                         <ReactTyped
                             className="text-white font-serif text-6xl"
                             strings={[
-                                "suicoins",
+                                "SUIt-tooth",
                                 "simple transactions",
                                 "walletless",
                             ]}

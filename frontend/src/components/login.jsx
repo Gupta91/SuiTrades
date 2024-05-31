@@ -60,6 +60,18 @@ export default function Login() {
      */
     useEffect(() => {
         if (session) {
+            const interval = setInterval(() => {
+                getAccountInfo();
+                getCount();
+            }, 300000); // 300000 milliseconds = 5 minutes
+
+            // Cleanup the interval on component unmount or when session changes
+            return () => clearInterval(interval);
+        }
+    }, [session]);
+
+    useEffect(() => {
+        if (session) {
             getAccountInfo();
             getCount();
         }
@@ -157,8 +169,6 @@ export default function Login() {
             },
         });
     };
-
-    
 
     async function getCount() {
         setCountLoading(true);

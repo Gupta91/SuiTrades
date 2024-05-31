@@ -21,6 +21,14 @@ export default function Navbar() {
                                 <li>
                                     <a
                                         className="font-serif hover:text-blue-500 text-xl tracking-widest"
+                                        href="/mint"
+                                    >
+                                        MINT
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        className="font-serif hover:text-blue-500 text-xl tracking-widest"
                                         href="/about"
                                     >
                                         ABOUT

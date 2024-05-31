@@ -6,6 +6,7 @@ import About from "./pages/about";
 import { EnokiFlowProvider } from "@mysten/enoki/react";
 import { getFullnodeUrl } from "@mysten/sui.js/client";
 import { createNetworkConfig, SuiClientProvider } from "@mysten/dapp-kit";
+import Mint from "./pages/mint";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/mint" element={<Mint />} />
                 </Routes>
             </BrowserRouter>
         </EnokiFlowProvider>

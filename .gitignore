@@ -1,3 +1,4 @@
 .DS_Store
 .env
 sui-trading-backend/node_modules/*
+smartContracts/build/*

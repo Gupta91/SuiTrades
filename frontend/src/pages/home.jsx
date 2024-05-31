@@ -218,78 +218,84 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: -80 }}
                 transition={{ duration: 1 }}
             >
-                <h1 className="text-white font-serif text-6xl">Transact</h1>
+                <h1 className="text-white font-serif text-6xl mb-24">Transact</h1>
             </motion.div>
-            {/* <motion.input
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                    type="text"
-                    name="description"
-                    onChange={handleChange}
-                    placeholder="Eg. 0.2 SUI"
-                    whileHover={{ scale: 1.05 }}
-                /> */}
-            <div className="flex justify-center text-xl mt-24">
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Receive 1 SUI
-                </motion.button>
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Receive 5 SUI
-                </motion.button>
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Receive SUI:
-                </motion.button>
-                <motion.input
-                    className="w-1/4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                    type="text"
-                    name="description"
-                    onChange={handleChange}
-                    placeholder="Eg. 0.2 SUI"
-                    whileHover={{ scale: 1.05 }}
-                />
-            </div>
-            <div className="flex justify-center text-xl mt-24">
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={async () => {
-                        setRecipientAddress(
-                            "0xa8837b2c7e9925012c677622351dacf9ac59a151699ca89195febdd5347aaa7a"
-                        );
-                        setAmount("0.2");
-                        transferSui();
-                    }}
-                >
-                    Send 1 SUI
-                </motion.button>
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Send 5 SUI
-                </motion.button>
-                <motion.button
-                    className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                    whileHover={{ scale: 1.2 }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Sell X%
-                </motion.button>
-            </div>
-            <ToTopButton />
+            <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: -80 }}
+                transition={{ duration: 1 }}
+            >
+                <div className="flex justify-center text-xl">
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Receive 1 SUI
+                    </motion.button>
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Receive 5 SUI
+                    </motion.button>
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Receive SUI:
+                    </motion.button>
+                    <motion.input
+                        className="w-1/4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                        type="text"
+                        name="buy"
+                        onChange={handleChange}
+                        placeholder="Eg. 0.2 SUI"
+                        whileHover={{ scale: 1.05 }}
+                    />
+                </div>
+                <div className="flex justify-center text-xl mt-5 mb-24">
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={async () => {
+                            setRecipientAddress(
+                                "0xa8837b2c7e9925012c677622351dacf9ac59a151699ca89195febdd5347aaa7a"
+                            );
+                            setAmount("0.2");
+                            transferSui();
+                        }}
+                    >
+                        Send 1 SUI
+                    </motion.button>
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Send 5 SUI
+                    </motion.button>
+                    <motion.button
+                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Sell SUI:
+                    </motion.button>
+                    <motion.input
+                        className="w-1/4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+                        type="text"
+                        name="sell"
+                        onChange={handleChange}
+                        placeholder="Eg. 0.2 SUI"
+                        whileHover={{ scale: 1.05 }}
+                    />
+                </div>
+            </motion.div>
+            <div className="py-28"></div>
         </div>
     );
 }

@@ -515,37 +515,6 @@ export default function Home() {
                     />
                 </div>
 
-                <div className="flex justify-center text-xl">
-                    <motion.button
-                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Receive 1 SUI
-                    </motion.button>
-                    <motion.button
-                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Receive 5 SUI
-                    </motion.button>
-                    <motion.button
-                        className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Receive SUI:
-                    </motion.button>
-                    <motion.input
-                        className="w-1/4 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                        type="number"
-                        name="buy"
-                        onChange={handleChange}
-                        placeholder="Eg. 0.2"
-                        whileHover={{ scale: 1.05 }}
-                    />
-                </div>
                 <div className="flex justify-center text-xl mt-5 mb-24">
                     <motion.button
                         className=" bg-gradient-to-r from-indigo-700 to-blue-500 text-white  py-2 px-8 mx-2 rounded-lg"
